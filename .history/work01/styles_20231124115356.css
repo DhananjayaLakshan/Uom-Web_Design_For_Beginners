@@ -1,0 +1,13 @@
+.tagline{
+    color: blueviolet;
+    font-style: italic;
+}
+
+img{
+    float: right;
+}
+
+.pricetopic{
+    font-size: 25px;
+    font-weight: 400;
+}
