@@ -75,16 +75,16 @@ background-color:black;
 }
 
 .coverImg{
-    width: 100%;
-    height: 100vh;
+    width: 250vh;
+    height: 85vh;
 }
 
 .container{
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     align-items:center;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 50px 8%;
 }
 
 .gallery{
@@ -103,11 +103,12 @@ background-color:black;
 }
 
 table{
-    margin: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     width: 75%;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
     border-collapse: collapse;
+    text-align: center;
 }
 
 td, th {

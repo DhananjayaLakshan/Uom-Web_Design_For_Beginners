@@ -81,10 +81,10 @@ background-color:black;
 
 .container{
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     align-items:center;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 50px 8%;
 }
 
 .gallery{

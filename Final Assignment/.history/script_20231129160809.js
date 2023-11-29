@@ -15,9 +15,6 @@ function book2(){
 
     item1.style.color = 'blue';
     item2.style.color = 'blue';
-
-    alert("Booked Double Room")
-    
 }
 
 function book3(){
@@ -26,9 +23,6 @@ function book3(){
 
     item1.style.color = 'orange';
     item2.style.color = 'orange';
-
-    alert("Booked Family Room")
-
 }
 
 function book4(){
@@ -37,9 +31,6 @@ function book4(){
 
     item1.style.color = 'green';
     item2.style.color = 'green';
-
-    alert("Booked Luxury Room")
-
 }
 
 function reserve(){

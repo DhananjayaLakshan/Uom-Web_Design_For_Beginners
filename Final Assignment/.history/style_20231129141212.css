@@ -70,48 +70,5 @@ background-color:black;
 
 
 .cover{
-    width: 100px;
-    max-height: 500px;
-}
-
-.coverImg{
-    width: 100%;
-    height: 100vh;
-}
-
-.container{
-    width: 100%;
-    min-height: 50vh;
-    align-items:center;
-    justify-content: center;
-    padding: 50px 50px;
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap: 30px;
-}
-
-.gallery img{
-    width: 100%;
-    transition: all 0.3s ease 0s;    
-}
-
-.gallery img:hover{
-    border: 5px solid blue; 
-}
-
-table{
-    margin: 30px;
-    width: 75%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    border-collapse: collapse;
-}
-
-td, th {
-    border: 1px solid #000000;
-    text-align: center;
-    padding: 8px;
+    background-color:aqua;
 }
