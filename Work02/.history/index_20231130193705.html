@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="pid">This is a sample paragraph!</p>
+    
+    <script>
+
+        $(document).ready(function(){
+            $('#pid').click(function(){
+                alert('You clicked the paragraph..!!');
+            })
+        })
+
+        // $('#pid').click(function(){
+        //     alert('You clicked the paragraph..!!');
+        // });
+        
+        // document.getElementById('pid').onclick = function(){
+        //     alert('You clicked the paragraph..!!');
+        // }
+
+    </script>
+
+    <p>click the button</p>
+    <button id="btn1">click here</button>
+    <br><hr><br>
+
+    <p>Double click  the button</p>
+    <button id="btn2">double click</button>
+    <br><hr><br>
+
+    <p>Hover the button</p>
+    <button id="btn3">double click</button>
+    <br><hr><br>
+
+    <p>Double click  the button</p>
+    <button id="btn4">double click</button>
+    <br><hr><br>
+
+    <script>
+
+        $('#btn1').click(function(){
+            $(this).hide();
+        });
+
+        $('#btn2').dblclick(function(){
+            $(this).hide();
+        });
+
+        $('#btn3').dblclick(function(){
+            $(this).css('background-color','pink');
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
