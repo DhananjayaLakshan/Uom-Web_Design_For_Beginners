@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <p id="pid">This is a sample paragraph!</p>
+    
+    <script>
+
+        $(document).ready(function(){
+            $('#pid').click(function(){
+                alert('You clicked the paragraph..!!');
+            })
+        })
+
+        // $('#pid').click(function(){
+        //     alert('You clicked the paragraph..!!');
+        // });
+        
+        // document.getElementById('pid').onclick = function(){
+        //     alert('You clicked the paragraph..!!');
+        // }
+
+    </script>
+
+    <p>click the button</p>
+    <button id="btn1">click here</button>
+    <br><hr><br>
+
+    <p>Double click  the button</p>
+    <button id="btn2">double click</button>
+    <br><hr><br>
+
+    <p>Hover the button</p>
+    <button id="btn3">Hover click</button>
+    <br><hr><br>
+
+    <p>Double click  the button</p>
+    <button id="btn4">double click</button>
+    <br><hr><br>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#btn1').click(function(){
+                $(this).hide();
+            });
+
+            $('#btn2').dblclick(function(){
+                $(this).hide();
+            });
+
+            $('#btn3').hover(function(){
+                $(this).css('background-color','pink');
+            });
+
+            $('#btn4').on({
+
+                mouseenter:function(){
+                    $(this).css("background-color", "cyan");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "yellow");
+                }
+            })
+                
+
+        });
+    </script>
+
+    <br><br>
+    <hr><br><br>
+
+    <button class="hideBtn">Hide</button>
+    <button class="showBtn">Show</button>
+    <button class="toggleBtn">Toggle</button>
+    <button class="fadeout">Fade Out</button>
+    <button class="fadein">Fade In</button>
+    <button class="toggle">Toggle</button>
+    <button class="fadeto">Fade To</button>
+
+
+    <hr>
+
+    <p class="pfast" style="background-color: antiquewhite;">This paragraph will show\hide with fast speed.</p>
+    <p class="pslow" style="background-color: rgb(192, 224, 174);">This paragraph will show\hide with slow speed.</p>
+    <p class="pclass" style="background-color: rgb(243, 241, 184);">This paragraph will show\hide with very 2000ms.</p>
+
+    <script>
+        $(document).ready(function(){
+            $(".hideBtn").click(function(){
+                $("p.pfast").hide("fast");    
+                $("p.pslow").hide("slow");    
+                $("p.pclass").hide(2000);    
+            })
+
+            $(".showBtn").click(function(){
+                $("p.pfast").show("fast");    
+                $("p.pslow").show("slow");    
+                $("p.pclass").show(2000);    
+            })
+
+            $(".toggleBtn").click(function(){
+                $("p.pfast").toggle("fast");    
+                $("p.pslow").toggle("slow");    
+                $("p.pclass").toggle(2000);    
+            })
+
+            $(".fadeout").click(function(){
+                $("p.pfast").fadeOut("fast");    
+                $("p.pslow").fadeOut("slow");    
+                $("p.pclass").fadeOut(2000);    
+            })
+
+            $(".fadein").click(function(){
+                $("p.pfast").fadeIn("fast");    
+                $("p.pslow").fadeIn("slow");    
+                $("p.pclass").fadeIn(2000);    
+            })
+
+            $(".toggle").click(function(){
+                $("p.pfast").fadeToggle("fast");    
+                $("p.pslow").fadeToggle("slow");    
+                $("p.pclass").fadeToggle(2000);    
+            })
+
+            $(".fadeto").click(function(){
+                $("p.pfast").fadeToggle("fast");    
+                $("p.pslow").fadeToggle("slow");    
+                $("p.pclass").fadeToggle(2000);    
+            })
+
+
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
