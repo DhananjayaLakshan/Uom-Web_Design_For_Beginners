@@ -1,0 +1,23 @@
+.container{
+    width: 250px;
+    margin: 25px auto;
+}
+
+form{
+    padding: 20px;
+    background-color:beige;
+    color: black;
+    font-weight: 500;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+form label,
+form input,
+form button{
+    border:0;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+}
