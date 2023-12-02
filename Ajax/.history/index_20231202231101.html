@@ -54,16 +54,5 @@
 <div id="div3"></div>
 <div id="error"></div>
 
-<script>
-    $(document).ready(function(){
-        $('#div3').load('moreinfo.html',function(response,statusTxt,xhr){
-            if(statusTxt == "success")
-                alert("Content loaded successfully");
-            if(statusTxt == "error")
-                alert("Error: " + xhr.status + ahr.statusTxt);
-        });
-    });
-</script>
-
 </body>
 </html>

@@ -56,7 +56,7 @@
 
 <script>
     $(document).ready(function(){
-        $('#div3').load('moreinfo.html',function(response,statusTxt,xhr){
+        $('div3').load('moreinfo.html',function(response,statusTxt,xhr){
             if(statusTxt == "success")
                 alert("Content loaded successfully");
             if(statusTxt == "error")
